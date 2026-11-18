@@ -135,7 +135,7 @@ Any API key previously exposed should be revoked and replaced before deployment.
 
 The application has been tested locally across all seven dashboard sections, including a successful live Gemini response.
 
-Deployment and final public-access verification are pending.
+CampaignIQ has been deployed to Streamlit Community Cloud and tested locally across all seven dashboard sections, including a successful Gemini response.
 
 ## Team
 
