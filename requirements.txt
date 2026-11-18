@@ -1,0 +1,7 @@
+streamlit>=1.36
+pandas>=2.1
+numpy>=1.26
+plotly>=5.20
+google-genai>=1.0
+python-dotenv>=1.0
+kagglehub>=0.3
