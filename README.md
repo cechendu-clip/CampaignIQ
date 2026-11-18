@@ -6,7 +6,9 @@ The application uses dunnhumby's *The Complete Journey* dataset and integrates G
 
 ## App Deployment URL
 
-**Live application:** Deployment pending — URL will be added after publishing to Streamlit Community Cloud.
+**Live application:** https://campaigniq-team8.streamlit.app
+
+**GitHub repository:** https://github.com/cechendu-clip/CampaignIQ
 
 ## Project Overview
 
@@ -39,39 +41,34 @@ CampaignIQ contains 30 campaigns, of which 29 can be fully analyzed. Campaign 24
 
 ## Local Setup Instructions
 
-### 1. Clone the repository
+### 1. Install uv
+
+Install uv from:
+https://docs.astral.sh/uv/getting-started/installation/
+
+### 2. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/cechendu-clip/CampaignIQ.git
 cd CampaignIQ
 ```
 
-Replace `YOUR_GITHUB_REPOSITORY_URL` with the actual GitHub repository URL after publishing.
-
-### 2. Install uv
-
-Install `uv` using the instructions at https://docs.astral.sh/uv/getting-started/installation/
-
-### 3. Install project dependencies
+### 3. Install dependencies
 
 ```bash
 uv sync
 ```
 
-This creates the project's virtual environment and installs dependencies from `pyproject.toml` and `uv.lock`.
-
 ### 4. Configure Gemini (optional)
 
-Copy `.env.example` to `.env` and provide a valid Gemini API key.
+Copy `.env.example` to `.env` and add your Gemini API key:
 
 ```env
 GEMINI_API_KEY=your_api_key_here
 GEMINI_MODEL=gemini-2.5-flash
 ```
 
-The main analytics dashboard can be used without a Gemini API key. A valid key is required to generate live AI responses.
-
-Never commit `.env` or expose API credentials.
+The dashboard works without an API key, but live AI responses require one.
 
 ### 5. Run CampaignIQ
 
@@ -79,9 +76,8 @@ Never commit `.env` or expose API credentials.
 uv run streamlit run app.py
 ```
 
-Open the local URL provided by Streamlit, usually:
+Open http://localhost:8501
 
-http://localhost:8501
 
 ## Dataset
 
